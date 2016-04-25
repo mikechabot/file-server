@@ -14,8 +14,9 @@ app.get('/', function (req, res) {
     }
     const destination = 'data.txt'
     concat([
-        './fairy-tales.txt',
-        './christmas-stories.txt'
+        './trump-2016-presidential-announcement.txt',
+        './trump-2015-iowa-freedom-summit.txt',
+        './trump-2015-hilton-head.txt'
     ], destination, () => {
         res.sendFile(destination, options, function (error) {
             if (error) {
